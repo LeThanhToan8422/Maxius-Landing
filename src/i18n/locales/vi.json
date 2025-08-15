@@ -1,0 +1,147 @@
+{
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Có lỗi xảy ra",
+    "success": "Thành công",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "close": "Đóng",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "previous": "Trước đó"
+  },
+  "navigation": {
+    "hero": "Trang chủ",
+    "about": "Giới thiệu",
+    "features": "Tính năng",
+    "contact": "Liên hệ",
+    "footer": "Thông tin",
+    "pricing": "Giá cả",
+    "integrations": "Tích hợp",
+    "blog": "Blog",
+    "careers": "Tuyển dụng",
+    "help": "Trung tâm trợ giúp",
+    "docs": "Tài liệu"
+  },
+  "header": {
+    "title": "MAXIUS",
+    "subtitle": "MAX I & US",
+    "startNow": "Bắt đầu ngay",
+    "learnMore": "Tìm hiểu thêm",
+    "language": {
+      "vi": "VI",
+      "en": "EN"
+    },
+    "aria": {
+      "logo": "MAXIUS - Về trang chủ",
+      "navigation": "Menu điều hướng chính",
+      "languageSelector": "Chọn ngôn ngữ",
+      "vietnamese": "Ngôn ngữ tiếng Việt (đang chọn)",
+      "english": "Chuyển sang tiếng Anh",
+      "startUsing": "Bắt đầu sử dụng MAXIUS ngay hôm nay",
+      "mobileMenu": "Menu điều hướng di động",
+      "openMenu": "Mở menu điều hướng",
+      "closeMenu": "Đóng menu điều hướng"
+    }
+  },
+  "hero": {
+    "tag": "Nền tảng công nghệ hàng đầu Việt Nam",
+    "title": "MAXIUS",
+    "subtitle": "MAX I & US",
+    "description": "Maxius là công ty bán dẫn tự phát triển duy nhất tập trung vào việc phát triển Máy chủ Hiệu suất Cao. Chúng tôi cung cấp các giải pháp chuyên biệt hướng đến các lĩnh vực khác nhau của ngành CNTT và phấn đấu trở thành lãnh đạo trong công nghệ máy chủ trên thị trường toàn cầu.",
+    "cta": {
+      "primary": "Bắt đầu ngay",
+      "secondary": "Tìm hiểu thêm"
+    },
+    "features": {
+      "freeTrial": "Miễn phí dùng thử",
+      "quickDeploy": "Triển khai nhanh",
+      "highSecurity": "Bảo mật cao"
+    }
+  },
+  "about": {
+    "tag": "Về chúng tôi",
+    "title": "Tại sao chọn Maxius?",
+    "description": "Maxius được xây dựng với mục tiêu đơn giản hóa công nghệ và mang lại giá trị thực tế cho doanh nghiệp.",
+    "features": {
+      "speed": {
+        "title": "Tốc độ",
+        "description": "Hiệu suất cao với công nghệ tiên tiến nhất"
+      },
+      "security": {
+        "title": "Bảo mật",
+        "description": "Bảo vệ dữ liệu với tiêu chuẩn quốc tế"
+      },
+      "innovation": {
+        "title": "Sáng tạo",
+        "description": "Giải pháp đổi mới cho mọi thách thức"
+      }
+    }
+  },
+  "features": {
+    "tag": "Tính năng nổi bật",
+    "title": "Khám phá sức mạnh của Maxius",
+    "description": "Khám phá những tính năng mạnh mẽ giúp doanh nghiệp của bạn phát triển vượt bậc.",
+    "items": {
+      "projectManagement": {
+        "title": "Quản lý dự án thông minh",
+        "description": "Hệ thống quản lý dự án với AI hỗ trợ, giúp tối ưu hóa quy trình và tăng hiệu suất làm việc.",
+        "features": [
+          "Lập kế hoạch tự động",
+          "Theo dõi tiến độ real-time",
+          "Phân tích dữ liệu thông minh"
+        ]
+      },
+      "integration": {
+        "title": "Tích hợp đa nền tảng",
+        "description": "Kết nối với các công cụ và dịch vụ phổ biến, tạo ra một hệ sinh thái làm việc liền mạch.",
+        "features": ["API mở rộng", "Webhook tự động", "Đồng bộ hóa dữ liệu"]
+      }
+    }
+  },
+  "contact": {
+    "tag": "Liên hệ",
+    "title": "Sẵn sàng để bắt đầu?",
+    "description": "Sẵn sàng để bắt đầu hành trình chuyển đổi số? Hãy để chúng tôi hỗ trợ bạn.",
+    "info": {
+      "title": "Thông tin liên hệ",
+      "description": "Đội ngũ chuyên gia của chúng tôi luôn sẵn sàng hỗ trợ và tư vấn để giúp doanh nghiệp của bạn đạt được mục tiêu.",
+      "email": "Email",
+      "phone": "Điện thoại",
+      "fax": "Fax",
+      "address": "Địa chỉ"
+    },
+    "form": {
+      "name": "Họ và tên",
+      "email": "Email",
+      "message": "Tin nhắn",
+      "namePlaceholder": "Nhập họ và tên của bạn",
+      "emailPlaceholder": "Nhập email của bạn",
+      "messagePlaceholder": "Nhập tin nhắn của bạn",
+      "submit": "Gửi tin nhắn",
+      "validation": {
+        "nameRequired": "Vui lòng nhập họ và tên!",
+        "emailRequired": "Vui lòng nhập email!",
+        "emailInvalid": "Email không hợp lệ!",
+        "messageRequired": "Vui lòng nhập tin nhắn!"
+      }
+    }
+  },
+  "footer": {
+    "description": "Maxius là công ty công nghệ tiên tiến chuyên cung cấp các giải pháp số hóa toàn diện cho doanh nghiệp.",
+    "contactInfo": "Thông tin liên hệ",
+    "followUs": "Theo dõi chúng tôi",
+    "copyright": "Tất cả quyền được bảo lưu.",
+    "links": {
+      "products": "Sản phẩm",
+      "company": "Công ty",
+      "support": "Hỗ trợ"
+    },
+    "legal": {
+      "privacy": "Chính sách bảo mật",
+      "terms": "Điều khoản sử dụng"
+    }
+  }
+}

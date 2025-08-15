@@ -1,0 +1,151 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "navigation": {
+    "hero": "Home",
+    "about": "About",
+    "features": "Features",
+    "contact": "Contact",
+    "footer": "Information",
+    "pricing": "Pricing",
+    "integrations": "Integrations",
+    "blog": "Blog",
+    "careers": "Careers",
+    "help": "Help Center",
+    "docs": "Documentation"
+  },
+  "header": {
+    "title": "MAXIUS",
+    "subtitle": "MAX I & US",
+    "startNow": "Get Started",
+    "learnMore": "Learn More",
+    "language": {
+      "vi": "VI",
+      "en": "EN"
+    },
+    "aria": {
+      "logo": "MAXIUS - Go to homepage",
+      "navigation": "Main navigation menu",
+      "languageSelector": "Select language",
+      "vietnamese": "Vietnamese language (currently selected)",
+      "english": "Switch to English",
+      "startUsing": "Start using MAXIUS today",
+      "mobileMenu": "Mobile navigation menu",
+      "openMenu": "Open navigation menu",
+      "closeMenu": "Close navigation menu"
+    }
+  },
+  "hero": {
+    "tag": "Leading Technology Platform in Vietnam",
+    "title": "MAXIUS",
+    "subtitle": "MAX I & US",
+    "description": "Maxius is the only self-developing semiconductor company focused on developing High-Performance Servers. We provide specialized solutions targeting different areas of the IT industry and strive to become a leader in server technology in the global market.",
+    "cta": {
+      "primary": "Get Started",
+      "secondary": "Learn More"
+    },
+    "features": {
+      "freeTrial": "Free Trial",
+      "quickDeploy": "Quick Deployment",
+      "highSecurity": "High Security"
+    }
+  },
+  "about": {
+    "tag": "About Us",
+    "title": "Why Choose Maxius?",
+    "description": "Maxius is built with the goal of simplifying technology and bringing real value to businesses.",
+    "features": {
+      "speed": {
+        "title": "Speed",
+        "description": "High performance with the most advanced technology"
+      },
+      "security": {
+        "title": "Security",
+        "description": "Data protection with international standards"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Innovative solutions for every challenge"
+      }
+    }
+  },
+  "features": {
+    "tag": "Key Features",
+    "title": "Discover the Power of Maxius",
+    "description": "Discover powerful features that help your business grow exponentially.",
+    "items": {
+      "projectManagement": {
+        "title": "Smart Project Management",
+        "description": "AI-powered project management system that helps optimize workflows and increase work efficiency.",
+        "features": [
+          "Automatic planning",
+          "Real-time progress tracking",
+          "Smart data analysis"
+        ]
+      },
+      "integration": {
+        "title": "Multi-platform Integration",
+        "description": "Connect with popular tools and services to create a seamless working ecosystem.",
+        "features": [
+          "Extensible API",
+          "Automatic webhooks",
+          "Data synchronization"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Ready to Get Started?",
+    "description": "Ready to start your digital transformation journey? Let us support you.",
+    "info": {
+      "title": "Contact Information",
+      "description": "Our team of experts is always ready to support and consult to help your business achieve its goals.",
+      "email": "Email",
+      "phone": "Phone",
+      "fax": "Fax",
+      "address": "Address"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Enter your full name",
+      "emailPlaceholder": "Enter your email",
+      "messagePlaceholder": "Enter your message",
+      "submit": "Send Message",
+      "validation": {
+        "nameRequired": "Please enter your name!",
+        "emailRequired": "Please enter your email!",
+        "emailInvalid": "Invalid email!",
+        "messageRequired": "Please enter your message!"
+      }
+    }
+  },
+  "footer": {
+    "description": "Maxius is an advanced technology company specializing in comprehensive digital solutions for businesses.",
+    "contactInfo": "Contact Information",
+    "followUs": "Follow Us",
+    "copyright": "All rights reserved.",
+    "links": {
+      "products": "Products",
+      "company": "Company",
+      "support": "Support"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  }
+}
