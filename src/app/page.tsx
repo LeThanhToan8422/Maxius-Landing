@@ -7,7 +7,6 @@ import {
   Button,
   Card,
   Space,
-  Divider,
   Form,
   Input,
   Avatar,
@@ -240,22 +239,24 @@ export default function Home() {
       <Section
         id="features"
         className="snap-section bg-gradient-to-br from-gray-50 to-blue-50 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 h-full flex flex-col justify-center">
-          <Row justify="center" className="mb-16">
-            <Col xs={24} lg={16} className="text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 h-full flex flex-col justify-center">
+          <Row justify="center" className="mb-12 md:mb-16">
+            <Col xs={24} sm={24} lg={20} xl={18} className="text-center">
               <Animation direction="up" repeat={true}>
                 <Tag
                   color="orange"
-                  className="px-4 py-2 text-sm mb-8 !bg-orange-100 !border !border-orange-300 !text-orange-700">
-                  <CheckCircleOutlined className="mr-2" />
+                  className="px-3 py-1 md:px-4 md:py-2 text-xs md:text-sm mb-6 md:mb-8 !bg-orange-100 !border !border-orange-300 !text-orange-700">
+                  <CheckCircleOutlined className="mr-1 md:mr-2" />
                   {t("features.tag")}
                 </Tag>
-                <Title
-                  level={2}
-                  className="!w-[1000px] !text-5xl md:!text-6xl !mb-8 !text-gray-900 font-bold">
-                  {t("features.title")}
-                </Title>
-                <Paragraph className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                <div className="!min-w-0 !overflow-hidden">
+                  <Title
+                    level={2}
+                    className="!text-4xl sm:!text-5xl md:!text-6xl !mb-8 !text-gray-900 font-bold !leading-tight">
+                    {t("features.title")}
+                  </Title>
+                </div>
+                <Paragraph className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
                   {t("features.description")}
                 </Paragraph>
               </Animation>
@@ -263,7 +264,7 @@ export default function Home() {
           </Row>
 
           <Row
-            gutter={[64, 48]}
+            gutter={[24, 32]}
             justify="center"
             className="flex-1 items-center">
             {[
@@ -286,27 +287,32 @@ export default function Home() {
                 color: "linear-gradient(135deg, #722ed1 0%, #eb2f96 100%)",
               },
             ].map((feature, index) => (
-              <Col xs={24} lg={12} key={feature.title}>
+              <Col xs={24} sm={24} md={12} lg={12} key={feature.title}>
                 <Animation
                   direction={index % 2 === 0 ? "left" : "right"}
                   delay={index * 0.2}
                   repeat={true}>
-                  <Card className="h-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-3 !border !border-gray-200 !rounded-[20px] !bg-white">
+                  <Card className="h-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-3 !border !border-gray-200 !rounded-[20px] !bg-white !p-6 md:!p-8">
                     <Avatar
-                      size={100}
-                      className="!mb-8 !flex !items-center !justify-center"
+                      size={80}
+                      className="!mb-6 md:!mb-8 !flex !items-center !justify-center"
                       style={{
                         background: feature.color,
                       }}
                       icon={feature.icon}
                     />
-                    <Title level={3} className="!text-4xl !mb-8 !text-gray-900">
+                    <Title
+                      level={3}
+                      className="!text-2xl sm:!text-3xl md:!text-4xl !mb-6 md:!mb-8 !text-gray-900">
                       {feature.title}
                     </Title>
-                    <Paragraph className="text-lg text-gray-600 mb-10 leading-relaxed">
+                    <Paragraph className="text-base md:text-lg text-gray-600 mb-8 md:mb-10 leading-relaxed">
                       {feature.description}
                     </Paragraph>
-                    <Space direction="vertical" size="large" className="w-full">
+                    <Space
+                      direction="vertical"
+                      size="middle"
+                      className="w-full">
                       {feature.features.map((item, itemIndex) => (
                         <Space key={itemIndex} className="w-full">
                           <Avatar
@@ -314,7 +320,9 @@ export default function Home() {
                             className="!bg-green-500"
                             icon={<CheckCircleOutlined />}
                           />
-                          <Text className="text-lg text-gray-700">{item}</Text>
+                          <Text className="text-base md:text-lg text-gray-700">
+                            {item}
+                          </Text>
                         </Space>
                       ))}
                     </Space>
