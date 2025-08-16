@@ -4,15 +4,21 @@ import { AnimationProps } from "@/types";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+/**
+ * Animation component with configurable repeat behavior
+ * @param repeat - If true, animation will trigger every time element comes into view
+ * @param triggerOnce - If false (when repeat=true), animation will trigger every time
+ */
 const Animation: React.FC<AnimationProps> = ({
   children,
   className = "",
   delay = 0,
   duration = 0.5,
   direction = "up",
+  repeat = false,
 }) => {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: !repeat,
     threshold: 0.1,
   });
 
@@ -69,6 +75,13 @@ const Animation: React.FC<AnimationProps> = ({
       {children}
     </motion.div>
   );
+};
+
+// Convenience component for repeatable animations
+export const RepeatableAnimation: React.FC<Omit<AnimationProps, "repeat">> = (
+  props
+) => {
+  return <Animation {...props} repeat={true} />;
 };
 
 export default Animation;

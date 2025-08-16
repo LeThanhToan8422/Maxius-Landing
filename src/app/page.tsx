@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto px-4 flex flex-col justify-center items-center h-full">
-          <Animation direction="up" delay={0.1}>
+          <Animation direction="up" delay={0.1} repeat={true}>
             <Tag
               color="orange"
               className="px-6 py-3 text-base border-0 mb-8 text-white !bg-orange-500/20 !backdrop-blur-md !border !border-orange-500/30">
@@ -65,7 +65,7 @@ export default function Home() {
             </Tag>
           </Animation>
 
-          <Animation direction="up" delay={0.2}>
+          <Animation direction="up" delay={0.2} repeat={true}>
             <Title
               level={1}
               className="!text-6xl md:!text-8xl lg:!text-9xl !mb-8 !leading-tight text-white font-bold">
@@ -73,7 +73,7 @@ export default function Home() {
             </Title>
           </Animation>
 
-          <Animation direction="up" delay={0.3}>
+          <Animation direction="up" delay={0.3} repeat={true}>
             <Title
               level={2}
               className="!text-3xl md:!text-4xl lg:!text-5xl !mb-8 !leading-tight text-blue-300 font-light">
@@ -81,14 +81,14 @@ export default function Home() {
             </Title>
           </Animation>
 
-          <Animation direction="up" delay={0.4}>
+          <Animation direction="up" delay={0.4} repeat={true}>
             <Paragraph className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-16 max-w-5xl mx-auto leading-relaxed font-light">
               {t("hero.description")}
             </Paragraph>
           </Animation>
 
-          <Animation direction="up" delay={0.5}>
-            <Space size="large" className="mb-16">
+          <Animation direction="up" delay={0.5} repeat={true}>
+            <Space size="large" className="!mb-4">
               <Button
                 type="primary"
                 size="large"
@@ -105,7 +105,7 @@ export default function Home() {
             </Space>
           </Animation>
 
-          <Animation direction="up" delay={0.6}>
+          <Animation direction="up" delay={0.6} repeat={true}>
             <Row gutter={[32, 16]} justify="center" className="text-gray-400">
               <Col>
                 <Space>
@@ -147,7 +147,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 h-full flex flex-col justify-center">
           <Row justify="center" className="mb-16">
             <Col xs={24} lg={16} className="text-center">
-              <Animation direction="up">
+              <Animation direction="up" repeat={true}>
                 <Tag
                   color="orange"
                   className="px-4 py-2 text-sm mb-8 !bg-orange-100 !border !border-orange-300 !text-orange-700">
@@ -197,7 +197,7 @@ export default function Home() {
               },
             ].map((feature, index) => (
               <Col xs={24} sm={12} lg={8} key={feature.title} className="flex">
-                <Animation direction="up" delay={index * 0.1}>
+                <Animation direction="up" delay={index * 0.1} repeat={true}>
                   <Card
                     className="text-center w-full h-full border-2 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 flex flex-col !rounded-2xl !min-h-[350px]"
                     style={{
@@ -243,7 +243,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 h-full flex flex-col justify-center">
           <Row justify="center" className="mb-16">
             <Col xs={24} lg={16} className="text-center">
-              <Animation direction="up">
+              <Animation direction="up" repeat={true}>
                 <Tag
                   color="orange"
                   className="px-4 py-2 text-sm mb-8 !bg-orange-100 !border !border-orange-300 !text-orange-700">
@@ -289,7 +289,8 @@ export default function Home() {
               <Col xs={24} lg={12} key={feature.title}>
                 <Animation
                   direction={index % 2 === 0 ? "left" : "right"}
-                  delay={index * 0.2}>
+                  delay={index * 0.2}
+                  repeat={true}>
                   <Card className="h-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-3 !border !border-gray-200 !rounded-[20px] !bg-white">
                     <Avatar
                       size={100}
@@ -302,7 +303,7 @@ export default function Home() {
                     <Title level={3} className="!text-4xl !mb-8 !text-gray-900">
                       {feature.title}
                     </Title>
-                    <Paragraph className="text-gray-600 mb-10 text-lg leading-relaxed">
+                    <Paragraph className="text-lg text-gray-600 mb-10 leading-relaxed">
                       {feature.description}
                     </Paragraph>
                     <Space direction="vertical" size="large" className="w-full">
@@ -330,7 +331,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 h-full flex flex-col justify-center">
           <Row justify="center" className="mb-16">
             <Col xs={24} lg={16} className="text-center">
-              <Animation direction="up">
+              <Animation direction="up" repeat={true}>
                 <Tag
                   color="orange"
                   className="px-4 py-2 text-sm mb-8 !bg-orange-100 !border !border-orange-300 !text-orange-700">
@@ -355,7 +356,7 @@ export default function Home() {
             className="flex-1 items-center">
             {/* Contact Info */}
             <Col xs={24} lg={12}>
-              <Animation direction="left" delay={0.2}>
+              <Animation direction="left" delay={0.2} repeat={true}>
                 <Card className="h-full border-0 shadow-none">
                   <Title level={3} className="!text-3xl !mb-8 !text-gray-900">
                     {t("contact.info.title")}
@@ -419,7 +420,7 @@ export default function Home() {
 
             {/* Contact Form */}
             <Col xs={24} lg={12}>
-              <Animation direction="right" delay={0.3}>
+              <Animation direction="right" delay={0.3} repeat={true}>
                 <Card className="h-full shadow-2xl border border-gray-100 !rounded-[20px]">
                   <Form
                     form={form}

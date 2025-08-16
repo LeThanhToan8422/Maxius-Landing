@@ -91,6 +91,7 @@ export interface AnimationProps {
   delay?: number;
   duration?: number;
   direction?: "up" | "down" | "left" | "right";
+  repeat?: boolean;
 }
 
 // Button types

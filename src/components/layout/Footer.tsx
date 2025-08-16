@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Row, Col, Typography, Divider } from "antd";
+import { Animation } from "@/components";
 import {
   MailOutlined,
   PhoneOutlined,
@@ -66,12 +66,7 @@ const Footer: React.FC = () => {
         <Row gutter={[48, 48]} className="flex-1 items-start pt-8">
           {/* Company Info & Contact - Left Column */}
           <Col xs={24} lg={14}>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="space-y-10">
+            <Animation direction="up" repeat={true} className="space-y-10">
               {/* Logo Section */}
               <div className="space-y-6">
                 <Link
@@ -99,9 +94,7 @@ const Footer: React.FC = () => {
                   {t("footer.contactInfo")}
                 </Title>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <motion.div
-                    className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
-                    whileHover={{ x: 5, y: -2 }}>
+                  <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:transform hover:translate-x-1 hover:-translate-y-0.5">
                     <div className="flex items-start space-x-4 !p-2">
                       <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center !mr-2">
                         <EnvironmentOutlined
@@ -118,11 +111,9 @@ const Footer: React.FC = () => {
                         </Text>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
 
-                  <motion.div
-                    className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
-                    whileHover={{ x: 5, y: -2 }}>
+                  <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:transform hover:translate-x-1 hover:-translate-y-0.5">
                     <div className="flex items-start space-x-4 !p-2">
                       <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center !mr-2">
                         <PhoneOutlined
@@ -144,11 +135,9 @@ const Footer: React.FC = () => {
                         </a>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
 
-                  <motion.div
-                    className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
-                    whileHover={{ x: 5, y: -2 }}>
+                  <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:transform hover:translate-x-1 hover:-translate-y-0.5">
                     <div className="flex items-start space-x-4 !p-2">
                       <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center !mr-2">
                         <PhoneOutlined
@@ -170,11 +159,9 @@ const Footer: React.FC = () => {
                         </a>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
 
-                  <motion.div
-                    className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
-                    whileHover={{ x: 5, y: -2 }}>
+                  <div className="p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:transform hover:translate-x-1 hover:-translate-y-0.5">
                     <div className="flex items-start space-x-4 !p-2">
                       <div className="flex-shrink-0 w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center !mr-2">
                         <MailOutlined
@@ -196,7 +183,7 @@ const Footer: React.FC = () => {
                         </a>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
               </div>
 
@@ -206,35 +193,34 @@ const Footer: React.FC = () => {
                   <div className="w-6 h-0.5 bg-gradient-to-r from-orange-400 to-orange-600 mr-3"></div>
                   {t("footer.followUs")}
                 </Title>
-                <div className="flex space-x-5">
+                <div className="!flex !space-x-6">
                   {socialLinks.map((social, index) => (
-                    <motion.a
+                    <Animation
                       key={social.name}
-                      href={social.href}
-                      className="w-14 h-14 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-gray-300 hover:text-white hover:bg-orange-500 hover:border-orange-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-orange-500/25 !mr-2"
-                      aria-label={`${social.name} của MAXIUS`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ y: -5 }}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: index * 0.1 }}
-                      viewport={{ once: true }}>
-                      <span className="text-xl">{social.icon}</span>
-                    </motion.a>
+                      direction="up"
+                      delay={index * 0.1}
+                      repeat={true}>
+                      <a
+                        href={social.href}
+                        className="w-14 h-14 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-gray-300 hover:text-white hover:bg-orange-500 hover:border-orange-400 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-orange-500/25 !mr-2"
+                        aria-label={`${social.name} của MAXIUS`}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span className="text-xl">{social.icon}</span>
+                      </a>
+                    </Animation>
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </Animation>
           </Col>
 
           {/* Map - Right Column */}
           <Col xs={24} lg={10}>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
+            <Animation
+              direction="left"
+              delay={0.2}
+              repeat={true}
               className="h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl border border-white/20 !mt-2">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.1234567890123!2d126.95123456789012!3d37.40123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c2b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sMAXIUS!5e0!3m2!1sen!2skr!4v1234567890123"
@@ -247,7 +233,7 @@ const Footer: React.FC = () => {
                 title="Vị trí văn phòng MAXIUS"
                 aria-label="Bản đồ Google Maps hiển thị vị trí văn phòng MAXIUS tại Anyang-si, Gyeonggi-do, Republic of Korea"
               />
-            </motion.div>
+            </Animation>
           </Col>
         </Row>
 
@@ -257,11 +243,7 @@ const Footer: React.FC = () => {
         <Row gutter={[32, 24]} className="mt-8">
           {FOOTER_LINKS.map((section, index) => (
             <Col key={section.title} xs={24} sm={12} md={8}>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}>
+              <Animation direction="up" delay={index * 0.1} repeat={true}>
                 <Title level={5} className="text-white mb-6 flex items-center">
                   <div className="w-4 h-0.5 bg-gradient-to-r from-orange-400 to-orange-600 mr-3"></div>
                   {t(`footer.links.${section.key.toLowerCase()}`)}
@@ -284,17 +266,16 @@ const Footer: React.FC = () => {
                     ))}
                   </ul>
                 </nav>
-              </motion.div>
+              </Animation>
             </Col>
           ))}
         </Row>
 
         {/* Bottom Footer - Improved Spacing */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          viewport={{ once: true }}
+        <Animation
+          direction="up"
+          delay={0.4}
+          repeat={true}
           className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 mt-12 pt-8 border-t border-gray-700/50">
           <Text className="text-gray-400 flex items-center text-sm">
             © {new Date().getFullYear()} {COMPANY_INFO.name}.{" "}
@@ -315,7 +296,7 @@ const Footer: React.FC = () => {
               {t("footer.legal.terms")}
             </a>
           </div>
-        </motion.div>
+        </Animation>
       </div>
     </section>
   );
